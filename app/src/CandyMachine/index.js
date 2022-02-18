@@ -1,5 +1,5 @@
 import React,{useEffect, useState}from 'react';
-import { MintLayout, TOKEN_PROGRAM_ID, Token } from '@solana/spl-token';
+
 import { getProvider, Program, Provider } from '@project-serum/anchor';
 import { sendTransactions } from './connection';
 import './CandyMachine.css';
