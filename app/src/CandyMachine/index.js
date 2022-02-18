@@ -1,5 +1,6 @@
 import React,{useEffect, useState}from 'react';
-
+import { Token } from '@solana/spl-token';
+import { MintLayout, TOKEN_PROGRAM_ID } from '@solana/spl-token';
 import { getProvider, Program, Provider } from '@project-serum/anchor';
 import { sendTransactions } from './connection';
 import './CandyMachine.css';
@@ -16,10 +17,9 @@ import {
   createAssociatedTokenAccountInstruction
 } from './helpers';
 import { min } from 'bn.js';
-
-//To get all the require methods/classes for connecting to the solana blockchian 
 const solanaWeb3 = require("@solana/web3.js");
 
+//To get all the require methods/classes for connecting to the solana blockchian 
 
 
   const { SystemProgram } = solanaWeb3;
@@ -444,7 +444,7 @@ return (
 
       <button className = "cta-button mint-button" onClick={comeBackAndMint}>
               Mint NFT
-    </button>
+  </button>
       )}
     
     </div> 
