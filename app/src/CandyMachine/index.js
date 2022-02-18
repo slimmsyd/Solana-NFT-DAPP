@@ -444,8 +444,9 @@ return (
 
       <button className = "cta-button mint-button" onClick={comeBackAndMint}>
               Mint NFT
-        </button>
+    </button>
       )}
+    
     </div> 
 )
 
